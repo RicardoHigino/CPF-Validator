@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --purple: rgb(134, 152, 255);
+  --purple_2: rgb(73, 84, 144);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--purple),
+    var(--purple_2)
+  );
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 50vh;
+  margin: 100px auto;
+  background: rgb(238, 238, 238);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: -10px 8px 20px 8px rgb(0 0 0 / 32%);
+}
+
+.container h3 {
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.container input {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 23px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+.container input.texto {
+  margin-bottom: 20px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.container input.texto:focus {
+  border: 2px solid var(--purple);
+}
+
+.container input.enviar {
+  background-color: var(--purple);
+  border: none;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+.container input.enviar:hover {
+  opacity: 0.9;
+}
+.container input.enviar:active {
+  transform: scale(0.9);
+}
+
+.enviar {
+  height: 70px auto;
+  width: 100px auto;
+  cursor: pointer;
+}
+
+.resultado {
+  margin-top: 30px;
+}
