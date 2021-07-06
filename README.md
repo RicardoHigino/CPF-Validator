@@ -1,4 +1,4 @@
-# Validador de CPF
+# Validator CPF
  
  http://ricardo.rf.gd/CPF-Validator/
  
